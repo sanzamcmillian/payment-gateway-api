@@ -18,8 +18,8 @@ def client():
 def test_create_payment(client):
     """Test payment creation endpoint."""
     response = client.post("/v1/payments", json={
-        "customer_name": "John Doe",
-        "customer_email": "john@example.com",
+        "customer_name": "Bill Doe",
+        "customer_email": "bill@example.com",
         "amount": 50.00
     })
     assert response.status_code == 200
@@ -32,4 +32,5 @@ def test_create_payment_missing_fields(client):
     """Test error when missing fields."""
     response = client.post("/v1/payments", json={})
     assert response.status_code == 400
+    data = response.get_json()
     assert "error" in data
