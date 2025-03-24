@@ -6,7 +6,7 @@ from storage.models import Payments
 def client():
     """Set up a test client and initialize the database."""
     app.config["TESTING"] = True
-    app.config["SQLACHEMY_DATABASE_URI"] = "sqlite://:memory"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite://:memory"
     with app.test_client() as client:
         with app.app_context():
             db.create_all()
