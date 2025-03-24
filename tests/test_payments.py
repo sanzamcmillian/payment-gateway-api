@@ -18,8 +18,8 @@ def client():
 def test_create_payment(client):
     """Test payment creation endpoint."""
     response = client.post("/v1/payments", json={
-        "customer_name": "Bill Doe",
-        "customer_email": "bill@example.com",
+        "customer_name": "Bi Doe",
+        "customer_email": "bi@example.com",
         "amount": 50.00
     })
     assert response.status_code == 200

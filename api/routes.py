@@ -38,7 +38,7 @@ def create_payment():
         db.session.commit()
 
     #payment_url = initiate_paypal_payment(payment_id, amount, name, email)
-        return jsonify({"message": "Payment created", "payment_id": payment_id, "approval_url": approval_url}), 201
+        return jsonify({"message": "Payment created", "payment_id": payment_id, "approval_url": approval_url}), 200
     else:
         return jsonify({"error": "Payment creation failed", "details": payment.error}), 400
     #return jsonify({"payment_id": payment_id, "status": "pending", "payment_url": payment_url})
