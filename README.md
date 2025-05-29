@@ -82,26 +82,28 @@ The app will be accessible at http://localhost:5000
 
 2. Get Payment Details
 
- GET /v1/payments/<payment_id>
+   ```plaintext
+   GET /v1/payments/<payment_id>
 
-Response:
- {
-  "payment_id": "12345",
-  "customer_name": "John Doe",
-  "customer_email": "john@example.com"
-  "amount": 100.00,
-  "status": "completed"
- }
-
+   Response:
+   {
+     "payment_id": "12345",
+     "customer_name": "John Doe",
+     "customer_email": "john@example.com"
+     "amount": 100.00,
+     "status": "completed"
+   }
+   ```
 
 # Running tests
 
- pytest tests/
-
+    
+    pytest tests/
+    
 
 # Live Link
 
-[(https://payment-gateway-api-foz9.onrender.com)]
+(https://payment-gateway-api-foz9.onrender.com)
 
 # Contributors
 
