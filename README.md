@@ -59,25 +59,26 @@ The app will be accessible at http://localhost:5000
 # API Endpoints
 
 1. Initiate a Payment
- POST /v1/payments
+    ```plaintext
+    POST /v1/payments
 
- Request Body:
+    Request Body:
 
- {
-  "payment_id": "12345",
-  "customer_name": "John Doe",
-  "customer_email": "john@example.com",
-  "amount": 100.00
- }
+    {
+      "payment_id": "12345",
+      "customer_name": "John Doe",
+      "customer_email": "john@example.com",
+      "amount": 100.00
+    }
 
-Response:
+    Response:
 
- {
-  "message": "Payment created successfully",
-  "status": "pending",
-  "payment_id": "12345"
- }
-
+    {
+      "message": "Payment created successfully",
+      "status": "pending",
+      "payment_id": "12345"
+    }
+    ```
 
 2. Get Payment Details
 
