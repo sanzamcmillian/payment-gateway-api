@@ -25,28 +25,33 @@ Implemententation with the use versioning, and automate testing and deployment t
 # Installation
 
 1. Clone the Repository
- git clone https://github.com/sanzamcmillian/payment_gateway-api.git
- cd payment-gateway-api
+   ```bash
+   git clone https://github.com/sanzamcmillian/payment_gateway-api.git
+   cd payment-gateway-api
 
-2. Create a Virtual Environment
+3. Create a Virtual Environment
 
-  python -m venv venv
-  source venv/bin/activate or
-  venv\Scripts\activate //Windows
+   ```bash
+    python -m venv venv
+    source venv/bin/activate or
+    venv\Scripts\activate //Windows
 
 3. Install Dependencies
-  
-  pip install -r requirements.txt
+
+    ```bash
+    pip install -r requirements.txt
 
 4. Set Up the Database
 
-  flask db init
-  flask db migrate -m "Initial migration"
-  flask db upgrade
+    ```bash
+    flask db init
+    flask db migrate -m "Initial migration"
+    flask db upgrade
 
 5. Run the Application
 
-  flask run
+    ```bash
+    flask run
 
 The app will be accessible at http://localhost:5000
 
